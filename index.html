@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Smash Faces</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/flat-ui.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="container">
+		<h1>SMASH FACES</h1>
+		<p>Binevenidas al juego de Smash Faces, tu misión es poder identificar a todas tus  compañeras de clase ingresando para ellos su nombre. Tienes 5 oportunidades antes de perder 1 punto y pasar a la siguiente </p>
+		<select id="opciones" class="form-control select select-primary select-block mbl btn-inverse">
+		  <optgroup label="Escoge tu sede">
+		    <option value="0">Chile</option>
+		    <option value="1">México</option>
+		    <option value="2">Perú</option>
+		  </optgroup>
+		</select>
+		<!-- ***************** -->
+		<div id="contenedorJuego">
+			<div class="row">
+				<div class="col-sm-6">
+					<img id="imagenPersona" src="fotos/Anita.jpg">
+				</div>
+				<div class="col-sm-6">
+					<h2 id="puntaje">Puntaje:</h2>
+					<input type="text" id="inputNombre" placeholder="Aquí va el nombre" class="form-control flat pull-right"></input>
+					<button id="btnClick" class="btn btn-inverse ">Revisar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/flat-ui.min.js"></script>
+</body>
+</html>
